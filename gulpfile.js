@@ -21,10 +21,10 @@ gulp.task('scripts', function() {
     return merge([ 
         tsResult.dts.pipe(gulp.dest('dist/definitions')),
         tsResult.js
-        .pipe(concat('grwpo-package.js'))
+        .pipe(concat('grwpo.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(uglify())
-        .pipe(rename('grwpo-package.min.js'))
+        .pipe(rename('grwpo.min.js'))
         .pipe(gulp.dest('dist/js'))
     ]);
 });
