@@ -1,0 +1,20 @@
+{
+  "name": "tsPackage",
+  "version": "1.0.0",
+  "description": "Grupow TypeScript Utility Classes",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raúl Uranga <ruranga@gmail.com> (https://github.com/rauluranga/)",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-typescript": "^2.8.0",
+    "merge2": "^0.3.6"
+  }
+}
