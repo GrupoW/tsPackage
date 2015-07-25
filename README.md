@@ -10,6 +10,12 @@ A collection of utilities and helper classes.
 ~ npm install
 ```
 
+###Build
+
+```
+~ gulp scripts
+```
+
 ###Test
 
 ```
