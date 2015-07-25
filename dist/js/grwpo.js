@@ -377,3 +377,56 @@ var com;
         })(utils = grwpo.utils || (grwpo.utils = {}));
     })(grwpo = com.grwpo || (com.grwpo = {}));
 })(com || (com = {}));
+
+/**
+ *
+ * String Utils by GrupoW
+ * GrupoW
+ *
+ * Released under MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ **/
+var com;
+(function (com) {
+    var grwpo;
+    (function (grwpo) {
+        var utils;
+        (function (utils) {
+            var string;
+            (function (string) {
+                /**
+                 *
+                 * @param	str
+                 * @return	check if the passes string is a valid e-mail
+                 */
+                function isEmail(str) {
+                    if (str.length < 5) {
+                        return false;
+                    }
+                    var iChars = "*|,\":<>[]{}`';()&$#%";
+                    var eLength = str.length;
+                    for (var i = 0; i < eLength; i++) {
+                        if (iChars.indexOf(str.charAt(i)) != -1) {
+                            return false;
+                        }
+                    }
+                    var atIndex = str.lastIndexOf("@");
+                    if (atIndex < 1 || (atIndex == eLength - 1)) {
+                        return false;
+                    }
+                    var pIndex = str.lastIndexOf(".");
+                    if (pIndex < 4 || (pIndex == eLength - 1)) {
+                        return false;
+                    }
+                    if (atIndex > pIndex) {
+                        return false;
+                    }
+                    return true;
+                }
+                string.isEmail = isEmail;
+                ;
+            })(string = utils.string || (utils.string = {}));
+        })(utils = grwpo.utils || (grwpo.utils = {}));
+    })(grwpo = com.grwpo || (com.grwpo = {}));
+})(com || (com = {}));
