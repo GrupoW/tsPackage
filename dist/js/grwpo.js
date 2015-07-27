@@ -1,162 +1,5 @@
 /**
  *
- * Math Utils by GrupoW
- * GrupoW
- *
- * Released under MIT license:
- * http://www.opensource.org/licenses/mit-license.php
- *
- **/
-var com;
-(function (com) {
-    var grwpo;
-    (function (grwpo) {
-        var utils;
-        (function (utils) {
-            var math;
-            (function (math) {
-                /**
-                 *
-                 * @param	p specified the probability (0 to 1) that the random "event" occurs.
-                 * @return	true if a random "event" occurs
-                 */
-                function chance(p) {
-                    return (Math.random() <= p);
-                }
-                math.chance = chance;
-            })(math = utils.math || (utils.math = {}));
-        })(utils = grwpo.utils || (grwpo.utils = {}));
-    })(grwpo = com.grwpo || (com.grwpo = {}));
-})(com || (com = {}));
-
-/**
- *
- * Math Utils by GrupoW
- * GrupoW
- *
- * Released under MIT license:
- * http://www.opensource.org/licenses/mit-license.php
- *
- **/
-var com;
-(function (com) {
-    var grwpo;
-    (function (grwpo) {
-        var utils;
-        (function (utils) {
-            var math;
-            (function (math) {
-                /**
-                 *
-                 * @param	max
-                 * @return	a random integer from 0 to max
-                 */
-                function random(max) {
-                    return Math.round(Math.random() * max);
-                }
-                math.random = random;
-            })(math = utils.math || (utils.math = {}));
-        })(utils = grwpo.utils || (grwpo.utils = {}));
-    })(grwpo = com.grwpo || (com.grwpo = {}));
-})(com || (com = {}));
-
-/**
- *
- * Math Utils by GrupoW
- * GrupoW
- *
- * Released under MIT license:
- * http://www.opensource.org/licenses/mit-license.php
- *
- **/
-/// <reference path="./random.ts" />
-var com;
-(function (com) {
-    var grwpo;
-    (function (grwpo) {
-        var utils;
-        (function (utils) {
-            var math;
-            (function (math) {
-                /**
-                 *
-                 * @param	min
-                 * @param	max
-                 * @return	a random integer from min to max
-                 */
-                function randomRange(min, max) {
-                    return min + math.random(max - min);
-                }
-                math.randomRange = randomRange;
-            })(math = utils.math || (utils.math = {}));
-        })(utils = grwpo.utils || (grwpo.utils = {}));
-    })(grwpo = com.grwpo || (com.grwpo = {}));
-})(com || (com = {}));
-
-/**
- *
- * Math Utils by GrupoW
- * GrupoW
- *
- * Released under MIT license:
- * http://www.opensource.org/licenses/mit-license.php
- *
- **/
-var com;
-(function (com) {
-    var grwpo;
-    (function (grwpo) {
-        var utils;
-        (function (utils) {
-            var math;
-            (function (math) {
-                /**
-                 *
-                 * @param	rads
-                 * @return	degrees value
-                 */
-                function toDeg(rads) {
-                    return rads * 180 / Math.PI;
-                }
-                math.toDeg = toDeg;
-            })(math = utils.math || (utils.math = {}));
-        })(utils = grwpo.utils || (grwpo.utils = {}));
-    })(grwpo = com.grwpo || (com.grwpo = {}));
-})(com || (com = {}));
-
-/**
- *
- * Math Utils by GrupoW
- * GrupoW
- *
- * Released under MIT license:
- * http://www.opensource.org/licenses/mit-license.php
- *
- **/
-var com;
-(function (com) {
-    var grwpo;
-    (function (grwpo) {
-        var utils;
-        (function (utils) {
-            var math;
-            (function (math) {
-                /**
-                 *
-                 * @param	degs
-                 * @return	radian value
-                 */
-                function toRad(degs) {
-                    return degs * Math.PI / 180;
-                }
-                math.toRad = toRad;
-            })(math = utils.math || (utils.math = {}));
-        })(utils = grwpo.utils || (grwpo.utils = {}));
-    })(grwpo = com.grwpo || (com.grwpo = {}));
-})(com || (com = {}));
-
-/**
- *
  * Array Utils by GrupoW
  * GrupoW
  *
@@ -374,6 +217,163 @@ var com;
                 }
                 array.shuffle = shuffle;
             })(array = utils.array || (utils.array = {}));
+        })(utils = grwpo.utils || (grwpo.utils = {}));
+    })(grwpo = com.grwpo || (com.grwpo = {}));
+})(com || (com = {}));
+
+/**
+ *
+ * Math Utils by GrupoW
+ * GrupoW
+ *
+ * Released under MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ **/
+var com;
+(function (com) {
+    var grwpo;
+    (function (grwpo) {
+        var utils;
+        (function (utils) {
+            var math;
+            (function (math) {
+                /**
+                 *
+                 * @param	p specified the probability (0 to 1) that the random "event" occurs.
+                 * @return	true if a random "event" occurs
+                 */
+                function chance(p) {
+                    return (Math.random() <= p);
+                }
+                math.chance = chance;
+            })(math = utils.math || (utils.math = {}));
+        })(utils = grwpo.utils || (grwpo.utils = {}));
+    })(grwpo = com.grwpo || (com.grwpo = {}));
+})(com || (com = {}));
+
+/**
+ *
+ * Math Utils by GrupoW
+ * GrupoW
+ *
+ * Released under MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ **/
+var com;
+(function (com) {
+    var grwpo;
+    (function (grwpo) {
+        var utils;
+        (function (utils) {
+            var math;
+            (function (math) {
+                /**
+                 *
+                 * @param	max
+                 * @return	a random integer from 0 to max
+                 */
+                function random(max) {
+                    return Math.round(Math.random() * max);
+                }
+                math.random = random;
+            })(math = utils.math || (utils.math = {}));
+        })(utils = grwpo.utils || (grwpo.utils = {}));
+    })(grwpo = com.grwpo || (com.grwpo = {}));
+})(com || (com = {}));
+
+/**
+ *
+ * Math Utils by GrupoW
+ * GrupoW
+ *
+ * Released under MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ **/
+/// <reference path="./random.ts" />
+var com;
+(function (com) {
+    var grwpo;
+    (function (grwpo) {
+        var utils;
+        (function (utils) {
+            var math;
+            (function (math) {
+                /**
+                 *
+                 * @param	min
+                 * @param	max
+                 * @return	a random integer from min to max
+                 */
+                function randomRange(min, max) {
+                    return min + math.random(max - min);
+                }
+                math.randomRange = randomRange;
+            })(math = utils.math || (utils.math = {}));
+        })(utils = grwpo.utils || (grwpo.utils = {}));
+    })(grwpo = com.grwpo || (com.grwpo = {}));
+})(com || (com = {}));
+
+/**
+ *
+ * Math Utils by GrupoW
+ * GrupoW
+ *
+ * Released under MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ **/
+var com;
+(function (com) {
+    var grwpo;
+    (function (grwpo) {
+        var utils;
+        (function (utils) {
+            var math;
+            (function (math) {
+                /**
+                 *
+                 * @param	rads
+                 * @return	degrees value
+                 */
+                function toDeg(rads) {
+                    return rads * 180 / Math.PI;
+                }
+                math.toDeg = toDeg;
+            })(math = utils.math || (utils.math = {}));
+        })(utils = grwpo.utils || (grwpo.utils = {}));
+    })(grwpo = com.grwpo || (com.grwpo = {}));
+})(com || (com = {}));
+
+/**
+ *
+ * Math Utils by GrupoW
+ * GrupoW
+ *
+ * Released under MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ **/
+var com;
+(function (com) {
+    var grwpo;
+    (function (grwpo) {
+        var utils;
+        (function (utils) {
+            var math;
+            (function (math) {
+                /**
+                 *
+                 * @param	degs
+                 * @return	radian value
+                 */
+                function toRad(degs) {
+                    return degs * Math.PI / 180;
+                }
+                math.toRad = toRad;
+            })(math = utils.math || (utils.math = {}));
         })(utils = grwpo.utils || (grwpo.utils = {}));
     })(grwpo = com.grwpo || (com.grwpo = {}));
 })(com || (com = {}));

@@ -398,6 +398,163 @@ var com;
                 /**
                  *
                  * @param	str
+                 * @param	text
+                 * @return	check if str contains the text
+                 */
+                function containsText(str, text) {
+                    return str.indexOf(text) !== -1;
+                }
+                string.containsText = containsText;
+                ;
+            })(string = utils.string || (utils.string = {}));
+        })(utils = grwpo.utils || (grwpo.utils = {}));
+    })(grwpo = com.grwpo || (com.grwpo = {}));
+})(com || (com = {}));
+
+/**
+ *
+ * String Utils by GrupoW
+ * GrupoW
+ *
+ * Released under MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ **/
+var com;
+(function (com) {
+    var grwpo;
+    (function (grwpo) {
+        var utils;
+        (function (utils) {
+            var string;
+            (function (string) {
+                /**
+                 *
+                 * @param	str
+                 * @param	start
+                 * @param	end
+                 * @return	get the text between start and end text from str
+                 */
+                function getTextBetween(str, start, end) {
+                    var re = new RegExp('.*' + start + '\\s+(.*)\\s+' + end + '.*', '');
+                    var newstr = str.replace(re, "$1");
+                    return newstr;
+                }
+                string.getTextBetween = getTextBetween;
+                ;
+            })(string = utils.string || (utils.string = {}));
+        })(utils = grwpo.utils || (grwpo.utils = {}));
+    })(grwpo = com.grwpo || (com.grwpo = {}));
+})(com || (com = {}));
+
+/**
+ *
+ * String Utils by GrupoW
+ * GrupoW
+ *
+ * Released under MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ **/
+var com;
+(function (com) {
+    var grwpo;
+    (function (grwpo) {
+        var utils;
+        (function (utils) {
+            var string;
+            (function (string) {
+                /**
+                 *
+                 * @param	str
+                 * @return	check if the passes string is a valid alpha (a-zA-Z)
+                 */
+                function isAlpha(str) {
+                    var re = /^[a-zA-Z]+$/;
+                    return re.test(str);
+                }
+                string.isAlpha = isAlpha;
+                ;
+                /**
+                 *
+                 * @param	str
+                 * @return	check if the passes string is a valid latin alpha (a-zA-ZñÑáéíóúÁÉÍÓÚ)
+                 */
+                function isLatinAlpha(str) {
+                    var re = /^[a-zA-Z\u00e1\u00e9\u00ed\u00f3\u00fa\u00c1\u00c9\u00cd\u00d3\u00da\u00f1\u00d1\u00FC\u00DC]+$/;
+                    return re.test(str);
+                }
+                string.isLatinAlpha = isLatinAlpha;
+                ;
+            })(string = utils.string || (utils.string = {}));
+        })(utils = grwpo.utils || (grwpo.utils = {}));
+    })(grwpo = com.grwpo || (com.grwpo = {}));
+})(com || (com = {}));
+
+/**
+ *
+ * String Utils by GrupoW
+ * GrupoW
+ *
+ * Released under MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ **/
+var com;
+(function (com) {
+    var grwpo;
+    (function (grwpo) {
+        var utils;
+        (function (utils) {
+            var string;
+            (function (string) {
+                /**
+                 *
+                 * @param	str
+                 * @return	check if the passes string is a valid alpha numeric (a-zA-Z0-9)
+                 */
+                function isAlphaNumeric(str) {
+                    var re = /^[a-zA-Z0-9]+$/;
+                    return re.test(str);
+                }
+                string.isAlphaNumeric = isAlphaNumeric;
+                ;
+                /**
+                 *
+                 * @param	str
+                 * @return	check if the passes string is a valid latin alpha numeric (0-9a-zA-ZñÑáéíóúÁÉÍÓÚ)
+                 */
+                function isLatinAlphaNumeric(str) {
+                    var re = /^[a-zA-Z0-9\u00e1\u00e9\u00ed\u00f3\u00fa\u00c1\u00c9\u00cd\u00d3\u00da\u00f1\u00d1\u00FC\u00DC]+$/;
+                    return re.test(str);
+                }
+                string.isLatinAlphaNumeric = isLatinAlphaNumeric;
+                ;
+            })(string = utils.string || (utils.string = {}));
+        })(utils = grwpo.utils || (grwpo.utils = {}));
+    })(grwpo = com.grwpo || (com.grwpo = {}));
+})(com || (com = {}));
+
+/**
+ *
+ * String Utils by GrupoW
+ * GrupoW
+ *
+ * Released under MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ **/
+var com;
+(function (com) {
+    var grwpo;
+    (function (grwpo) {
+        var utils;
+        (function (utils) {
+            var string;
+            (function (string) {
+                /**
+                 *
+                 * @param	str
                  * @return	check if the passes string is a valid e-mail
                  */
                 function isEmail(str) {
@@ -425,6 +582,93 @@ var com;
                     return true;
                 }
                 string.isEmail = isEmail;
+                ;
+            })(string = utils.string || (utils.string = {}));
+        })(utils = grwpo.utils || (grwpo.utils = {}));
+    })(grwpo = com.grwpo || (com.grwpo = {}));
+})(com || (com = {}));
+
+/**
+ *
+ * String Utils by GrupoW
+ * GrupoW
+ *
+ * Released under MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ **/
+var com;
+(function (com) {
+    var grwpo;
+    (function (grwpo) {
+        var utils;
+        (function (utils) {
+            var string;
+            (function (string) {
+                /**
+                 *
+                 * @param	value
+                 * @return	check if the passes string is a valid number (0-9)
+                 */
+                function isNumeric(value) {
+                    return !isNaN(value);
+                }
+                string.isNumeric = isNumeric;
+                ;
+            })(string = utils.string || (utils.string = {}));
+        })(utils = grwpo.utils || (grwpo.utils = {}));
+    })(grwpo = com.grwpo || (com.grwpo = {}));
+})(com || (com = {}));
+
+/**
+ *
+ * String Utils by GrupoW
+ * GrupoW
+ *
+ * Released under MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ **/
+var com;
+(function (com) {
+    var grwpo;
+    (function (grwpo) {
+        var utils;
+        (function (utils) {
+            var string;
+            (function (string) {
+                /**
+                 *
+                 * @param	value
+                 * @return	check if is valid syntax phone like (55) 1234-5678
+                 */
+                function isPhoneWithSpecialChars(str) {
+                    var re = /^[0-9()\- ]+$/;
+                    if (re.test(str)) {
+                        var n = str.replace(/[^\d]/g, ''); // remove all non-digits
+                        if (n && n.length == 10) {
+                            return true;
+                        }
+                        else {
+                            return false;
+                        }
+                    }
+                    else {
+                        return false;
+                    }
+                }
+                string.isPhoneWithSpecialChars = isPhoneWithSpecialChars;
+                ;
+                /**
+                 *
+                 * @param	value
+                 * @return	check if is valid phone like 5512345678
+                 */
+                function isPhone(str) {
+                    var re = /^([0-9]{10})/;
+                    return re.test(str);
+                }
+                string.isPhone = isPhone;
                 ;
             })(string = utils.string || (utils.string = {}));
         })(utils = grwpo.utils || (grwpo.utils = {}));
